@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои курсы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-info">
+                <h1>Кирилл</h1>
+                <p>@realdengachev</p>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active">Все</button>
+            <button class="tab">Закрепленное</button>
+            <button class="tab">Недавнее</button>
+        </div>
+
+        <div class="section">
+            <h2>Закрепленное</h2>
+            <div class="course-card">
+                <h3>Как данные помогают нам разгадывать тайны мозга</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 38%"></div>
+                </div>
+                <p>5 / 13 уроков</p>
+            </div>
+
+            <div class="course-card">
+                <h3>Нам нужны лидеры, которые смело выступают за инклюзивность</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 62%"></div>
+                </div>
+                <p>8 / 13 уроков</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Перенесите скрипты в конец body -->
+<body>
+    <!-- Весь контент -->
+    <script src="app.js" defer></script>  <!-- Добавьте defer -->
+  </body>
+  
+  <!-- Подключайте только нужные веса шрифта -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <img loading="lazy" src="...">
+
+  <link rel="preload" href="app.js" as="script">
+
+  <link href="styles.css?v=<?= filemtime('styles.css') ?>" rel="stylesheet">
+<script src="/app.js?v=2"></script>
+
+</body>
+</html>

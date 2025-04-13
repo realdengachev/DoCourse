@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoCourse - Выбор роли</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключаем Inter из Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <span class="time">9:41</span>
+        <div class="controls">
+            <span class="close-btn">Close</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="app-brand">DoCourse</div>
+        <div class="app-label">mini app</div>
+
+        <h1>Выбери свою роль на платформе</h1>
+        <p class="subtitle">Вы можете стать автором собственного курса или же его студентом</p>
+
+        <div class="role-card" id="authorCard">
+            <div class="icon-container" style="background-color: #FFFFFF;">
+                <svg class="icon" viewBox="0 0 24 24" fill="#0E0E0E">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                </svg>
+            </div>
+            <h2>Я автор курса</h2>
+            <p>Создавайте уникальный и полезный контент для ваших студентов</p>
+        </div>
+
+        <div class="role-card" id="studentCard">
+            <div class="icon-container" style="background-color: #FFFFFF;">
+                <svg class="icon" viewBox="0 0 24 24" fill="#0E0E0E">
+                    <path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                </svg>
+            </div>
+            <h2>Я студент курса</h2>
+            <p>Проходите курсы и получайте знания в удобном для вас формате</p>
+        </div>
+    </div>
+
+    <!-- Перенесите скрипты в конец body -->
+<body>
+    <!-- Весь контент -->
+    <script src="app.js" defer></script>  <!-- Добавьте defer -->
+  </body>
+  
+  <!-- Подключайте только нужные веса шрифта -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link href="styles.css?v=<?= filemtime('styles.css') ?>" rel="stylesheet">
+  <script src="/app.js?v=2"></script>
+
+</body>
+</html>
