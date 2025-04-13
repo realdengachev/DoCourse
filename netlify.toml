@@ -2,3 +2,8 @@
   for = "/*"
   [headers.values]
     Content-Encoding = "gzip"
+
+    [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
